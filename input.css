@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-wrapper{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.286)), url(/asset/bg2.jpg)
+}
+
+.primary-btn{
+    background: hsla(197, 100%, 63%, 1);
+
+background: linear-gradient(to right, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+background: -moz-linear-gradient(to right, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+background: -webkit-linear-gradient(to right, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+}
+
+
+.wrapper{
+    background-color: rgba(255, 255, 255, .15);  
+ backdrop-filter: blur(3px);
+}
+
+.submit:disabled{
+    cursor:wait;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="input.css">
+    <script src="/js/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class=" main-wrapper min-h-screen  bg-no-repeat bg-center bg-cover min-w-full flex items-center justify-center">
+        <div class="game-container w-[80%] md:w-[50%] lg:w-[35%] relative ">
+            <div class="wrapper  flex flex-col items-center justify-center gap-y-3 py-10 rounded-md">
+                <h1 class="main-heading text-2xl font-bold tracking-wider text-[#fff] " id="main_heading">Guess My Number</h1>
+                <h2 class="text-lg text-center tracking-wide font-bold text-orange-950" id="user_feedback"></h2>
+
+                <h3 class="text-lg tracking-wide font-semibold text-orange-950"  > 
+                    You have guessed <span class="text-xl font-semibold text-[#fff]"
+                    id="counter_message"
+                    >0</span> times
+                </h3>  
+                
+                <div>
+                    <input  type="text" value=""  id="guess_field" pattern="\d*" maxlength="3" class="bg-white bg-opacity-70 py-2 px-0 text-center text-xl rounded-sm block focus:outline-none">
+                <span class="error text-yellow-500 text-sm hidden" id="main_heading">Please enter a  number to guess!</span>
+                </div>
+                <button type="button" id="submit_btn" class="primary-btn py-2 px-8  text-lg tracking-wide text-[#fff] rounded-full transition-all duration-300 ease-in-out  cursor-pointer focus:outline-none border-none ">Guess</button>
+                <button  id="reset_btn" class="text-2xl text-orange-950 font-bold cursor-pointer hidden">New Game</button>
+            </div>  
+            
+        </div>
+    </section>
+</body>
+</html>
